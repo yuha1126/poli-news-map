@@ -1,0 +1,32 @@
+<h2>Details about <em><%= @rep.name %></em></h2>
+
+<ul id="Representative Info">
+  <% if @rep.photo.present? %>
+    <li>
+      
+        Photo:
+        <%= image_tag @rep.photo, alt: "#{@rep.name}'s Photo" %>
+        
+    </li>
+  <% end %>
+  <li>
+    Name:
+    <%= @rep.name %>
+  </li>
+  <li>
+    OCD ID:
+    <%= @rep.ocdid %>
+  </li>
+  <li>
+    Office:
+    <%= @rep.title %>
+  </li>
+  <li>
+    Address:
+    <%= @rep.address %>
+  </li>
+  <li>
+    Party:
+    <%= @rep.party %>
+  </li>
+</ul>
